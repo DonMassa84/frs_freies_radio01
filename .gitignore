@@ -1,0 +1,19 @@
+# Python Virtual Environment
+venv/
+venv_backup/
+.env/
+__pycache__/
+*.pyc
+
+# Flutter
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+packages
+.pub-cache/
+
+# IDE
+.idea/
+.vscode/
+*.iml

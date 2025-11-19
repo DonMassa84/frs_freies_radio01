@@ -1,0 +1,7 @@
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/Logo-FRS-99_2_RGB_gross_WEB.png
+  branding: assets/images/Logo-FRS-99_2_RGB_WEB.png
+  android_12:
+    image: assets/images/Logo-FRS-99_2_RGB_gross_WEB.png
+    icon_background_color: "#000000"

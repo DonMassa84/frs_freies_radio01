@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+echo ">>> FRS MASTER SUITE gestartet"
+
+echo "1) GitHub Auto-Deploy..."
+bash frs_auto.sh || true
+
+echo "2) Vercel Deploy..."
+bash frs_vercel_deploy.sh || true
+
+echo "3) Worker-Proxy nicht automatisch – manuell deployen (Vercel)"
+
+echo ">>> ✔ MASTER SUITE abgeschlossen"
+echo "GitHub: https://donmassa84.github.io/frs_freies_radio/"
+echo "Vercel: https://frs-freies-radio.vercel.app/"
