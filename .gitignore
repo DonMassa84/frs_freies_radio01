@@ -1,0 +1,11 @@
+*
+!.gitignore
+!*.html
+!*.js
+!*.css
+!*.jpg
+!*.png
+!*.svg
+!manifest.json
+!sw.js
+!vercel.json
