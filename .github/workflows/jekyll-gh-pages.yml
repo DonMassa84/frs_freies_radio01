@@ -3,6 +3,9 @@ name: Deploy (Deprecated Jekyll Workflow)
 on:
   workflow_dispatch:
 
+on_disabled:
+  workflow_dispatch:
+
 jobs:
   deprecated:
     runs-on: ubuntu-latest
