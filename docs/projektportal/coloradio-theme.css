@@ -1,0 +1,39 @@
+/* coloRadio-inspired FRS palette. Reference: coloradio.org, 2026-10-01. */
+:root{--radio-accent:#bc48ab;--radio-link:#912b82;--radio-ink:#232323;--radio-muted:#5c565d;--radio-tint:#f7edf5;--radio-line:#dedade;font-family:"Open Sans","Segoe UI",Arial,sans-serif;color:var(--radio-ink);background:#f5f5f5}
+.top{background:#232323;border-top:5px solid var(--radio-accent);border-bottom:0;box-shadow:none}
+.brandmark,nav a{color:#fff}.brandmark span{color:#e998dc}.brandcaption{color:#ded6de;border-color:#665f66}
+nav a:hover,nav a:focus{color:#f2b4e9}.menu{color:#fff;border-color:#807680}.frs-logo{background:white;padding:3px;border-radius:2px}
+.hero{background:#fff;color:#232323;padding-top:48px;border-bottom:1px solid var(--radio-line)}
+h1{font-size:clamp(2.3rem,4.6vw,4.2rem);letter-spacing:-.035em}h1 em{color:var(--radio-link)}
+.eyebrow,.index,.card-label,.record-kicker,.option-letter,.mini small{color:var(--radio-link)}
+.eyebrow span,.record-main h3 span{color:var(--radio-accent)}
+.lead,.section-heading p,.card p,.mini p,.leader p,.scope p,.matrix>p,.matrix-row i,.risk-grid p,.sources p,.record-main p,.record-fields dd,.archive-links span,.conversation-notes li span{color:var(--radio-muted)}
+.btn{color:#232323;border-color:#bcb6bd;border-radius:2px}.btn:hover,.btn:focus{background:var(--radio-tint)}
+.btn.primary{background:var(--radio-link);border-color:var(--radio-link);color:#fff}.btn.primary:hover{background:#742168}
+.hero-panel{background:#fff;border:1px solid var(--radio-line);border-top:4px solid var(--radio-accent);border-radius:2px;box-shadow:0 6px 20px #2323230a;color:#232323}
+.panel-top,.hero-panel dl div{border-color:var(--radio-line)}.panel-top span,.hero-panel dt{color:#5c565d}
+.panel-top strong,.badge.blue,.badge.neutral{color:#742168;background:var(--radio-tint);white-space:normal}
+.hero-panel p{color:#554e55;background:#f5f3f5}
+.meta-strip{border-color:var(--radio-line);color:#403940}.meta-strip b{color:var(--radio-link)}
+.section{border-color:var(--radio-line)}.section-heading{border-top:3px solid var(--radio-accent);padding-top:18px}
+.section-heading h2,.mini h3,.timeline strong,.record-fields dt,.status-grid strong{color:#292529}
+.card,.mini,.matrix,.leader,.timeline,.archive-links>*,.archive-preview,.status-grid div,.evidence div{border-color:var(--radio-line);border-radius:2px;box-shadow:none}
+.card.accent{border-top-color:var(--radio-accent)}.option-letter{border-color:var(--radio-line)}
+.scope>div,.scope>div+div{background:var(--radio-tint);border-left-color:var(--radio-accent)}
+.flow,.boundary,.archive-preview-head,footer{background:#232323;border-radius:2px}
+.flow>div,.flags span{background:#393039;border-left-color:var(--radio-accent)}
+.flow small,.flow>div:not(:last-child):after,.boundary-label,.flags b{color:#f0b6e7}
+.boundary p,footer p{color:#e0d9df}.architecture aside,.management,.note,.timeline li>span,.record-chain span{background:var(--radio-tint);color:#742168;border-radius:2px}
+.architecture aside p,.chips span{color:#554455}.chips span{border-color:var(--radio-line)}
+.timeline li,.matrix-row,.record-fields div,.archive-caption{border-color:var(--radio-line)}
+.timeline small,.evidence span,.status-grid div{color:#615862}.number{color:var(--radio-link)}
+.risk-grid{background:var(--radio-line);border-color:var(--radio-line)}.risk-grid>div{border-color:var(--radio-line)}
+.live-player{background:#232323;border:0;border-left:5px solid var(--radio-accent);border-radius:2px;color:#fff}
+.live-player .eyebrow{color:#f0b6e7}.live-player p{color:#e0d9df}.live-control a{color:#f0b6e7}
+.archive-links a:hover,.archive-links a:focus-visible{border-color:var(--radio-accent);box-shadow:none}
+.archive-caption{background:#f8f6f8;color:#5c565d}.archive-caption a{color:var(--radio-link)}
+.conversation-notes{border-radius:2px;border-left-color:var(--radio-accent);background:var(--radio-tint);color:#393039}
+.conversation-notes li{border-color:#e2cfe0}
+a:focus-visible,button:focus-visible,audio:focus-visible{outline:3px solid var(--radio-accent);outline-offset:4px}
+@media(max-width:1050px){nav{background:#232323;border-color:#665f66}nav.open{top:75px}}
+@media(max-width:740px){.hero{padding-top:34px}.hero-grid{gap:28px}.section-heading{padding-top:15px}}
