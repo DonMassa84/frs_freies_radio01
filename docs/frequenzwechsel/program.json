@@ -1,0 +1,52 @@
+{
+  "title": "FRS Frequenzwechsel",
+  "status": "planning",
+  "public": true,
+  "duration_minutes": 240,
+  "schedule_confirmed": false,
+  "lineup": [
+    {
+      "name": "Marc",
+      "role": "DJ",
+      "playlist_status": "requested"
+    },
+    {
+      "name": "Cordelia",
+      "role": "DJ",
+      "playlist_status": "requested"
+    },
+    {
+      "name": "Gerhard",
+      "role": "Gast-DJ",
+      "playlist_status": "requested"
+    }
+  ],
+  "phases": [
+    {
+      "from": "00:00",
+      "to": "00:30",
+      "name": "Ankommen"
+    },
+    {
+      "from": "00:30",
+      "to": "01:30",
+      "name": "House / Electro"
+    },
+    {
+      "from": "01:30",
+      "to": "02:30",
+      "name": "Nachtfahrt"
+    },
+    {
+      "from": "02:30",
+      "to": "03:30",
+      "name": "DJ Rotation"
+    },
+    {
+      "from": "03:30",
+      "to": "04:00",
+      "name": "Peak & Finale"
+    }
+  ],
+  "note": "Sendetermin und endgültige Reihenfolge werden mit FRS abgestimmt."
+}
