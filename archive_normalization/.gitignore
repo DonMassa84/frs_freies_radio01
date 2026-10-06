@@ -3,3 +3,5 @@ __pycache__/
 reports/
 *.mp3
 *.opus
+*.sqlite
+sources.json

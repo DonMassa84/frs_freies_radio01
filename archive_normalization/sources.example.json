@@ -1,0 +1,7 @@
+{
+  "sources": [
+    {"namespace": "ryzen-quelle-1", "path": "/ABSOLUTER/PFAD/ZUR/FREIGEGEBENEN/QUELLE"}
+  ],
+  "target": "/ABSOLUTER/PFAD/ZUM/STAGING/AUSSERHALB/DER/QUELLEN",
+  "reserve_ratio": 0.1
+}
