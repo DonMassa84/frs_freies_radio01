@@ -1,0 +1,7 @@
+{
+  "name": "frs-portal-tests",
+  "private": true,
+  "scripts": { "test": "node --test research.test.cjs" },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "jsdom": "30.1.2" }
+}
