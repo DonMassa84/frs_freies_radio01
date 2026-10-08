@@ -1,0 +1,44 @@
+<!doctype html><html lang="de"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Freies Radio Stuttgart</title>
+<link rel="manifest" href="manifest.json"/>
+<meta name="theme-color" content="#FF6600"/>
+<link rel="apple-touch-icon" href="icons/apple/apple-touch-icon.png"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div id="splash"><div class="logo">FRS</div></div>
+
+<header class="top">
+  <div class="title">Freies Radio Stuttgart</div>
+  <button id="theme-toggle">🌙</button>
+</header>
+
+<main class="wrap">
+
+<section class="card">
+  <h2>Live Stream</h2>
+  <audio id="player" controls preload="none">
+    <source src="https://streaming.fueralle.org/frs-hi.mp3" type="audio/mpeg">
+  </audio>
+  <button id="play-toggle" class="btn">Play</button>
+</section>
+
+<section class="card">
+  <h2>Programm</h2>
+  <div id="programm">Lade…</div>
+</section>
+
+<section class="card">
+  <h2>Mediathek</h2>
+  <div id="mediathek">Lade…</div>
+</section>
+
+</main>
+
+<footer>© Freies Radio Stuttgart – PWA</footer>
+
+<script src="app.js"></script>
+</body></html>

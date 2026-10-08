@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'docs/projektportal/**'
+      - 'docs/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
