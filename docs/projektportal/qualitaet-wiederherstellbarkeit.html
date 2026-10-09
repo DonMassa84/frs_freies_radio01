@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102944"><meta name="description" content="FRS ArchivBrücke: Konzept für Integrität, Metadatenqualität und Wiederherstellbarkeit im geplanten IHK-Archivpilot.">
+<title>Qualität und Wiederherstellbarkeit – FRS ArchivBrücke</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:dark}*{box-sizing:border-box}body{background:#102944;color:#eff6fa;line-height:1.65;margin:0}main{max-width:990px;margin:auto;padding:3rem 1.5rem 5rem}
+a{color:#71e2d9}a:focus-visible{outline:3px solid #71e2d9;outline-offset:4px}nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:3rem}
+.flag{border:1px solid #71e2d9;border-radius:99px;padding:.3rem 1rem;font-weight:700;font-size:.8rem;color:#71e2d9}h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1}
+.lead{font-size:1.16rem;max-width:55rem;color:#d5e5ee}section{border-top:1px solid #47627a;padding-top:2rem;margin-top:2.5rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+article{border:1px solid #41667e;border-radius:12px;background:#193a55;padding:1.35rem}article h3{margin:.1rem 0 .5rem;color:#82e3db}
+article p{margin:0}table{width:100%;border-collapse:collapse}th,td{padding:.8rem;text-align:left;border-bottom:1px solid #47627a;vertical-align:top}th{color:#82e3db}.scroller{overflow-x:auto}
+.note{border-left:4px solid #82e3db;background:#193a55;padding:1rem 1.4rem}footer{margin-top:3rem;color:#bdd2df}
+</style></head>
+<body><main><nav aria-label="Navigation"><a href="index.html">← Zur Projektübersicht</a><a href="#methodik">Methodik</a><a href="#tests">Testplan</a><a href="#status">Status</a></nav>
+<span class="flag">IHK-PROJEKTVORBEREITUNG · PRE_PROJECT</span><h1>Qualität, Datenintegrität &amp; Wiederherstellbarkeit</h1>
+<p class="lead">Für FRS ArchivBrücke ist ein nachvollziehbares Verfahren vorgesehen, das Archivdateien und Metadaten eindeutig zuordnet, Änderungen nachweisbar macht und Importvorgänge kontrolliert wiederholen lässt.</p>
+<div class="note"><strong>Transparenz:</strong> Die folgenden Verfahren sind <strong>geplant</strong>. Sie wurden noch nicht als FRS-Archivmigration umgesetzt oder abgenommen. Die Anregungen zur technischen Methodik stammen unter anderem aus einer getrennten Wiederherstellungsübung, nicht aus einer produktiven FRS-Migration.</div>
+<section id="methodik"><h2>Geplante Qualitätssicherung</h2><div class="grid">
+<article><h3>Quellen &amp; Provenienz</h3><p>Jeder Testdatensatz erhält einen nachvollziehbaren Bezug zur Quelle und ein dokumentiertes Importergebnis.</p></article>
+<article><h3>Integritätsprüfung</h3><p>SHA-256-Prüfsummen sollen unveränderte Medienobjekte über Verarbeitungsschritte hinweg verifizieren.</p></article>
+<article><h3>Wiederholbarer Import</h3><p>Mehrfaches Importieren derselben Quelle soll keine unbeabsichtigten Dubletten erzeugen.</p></article>
+<article><h3>Konflikte &amp; Rejects</h3><p>Abweichende Versionen und ungültige Metadaten sollen nachvollziehbar markiert statt still überschrieben werden.</p></article>
+<article><h3>Wiederanlauf</h3><p>Unterbrochene Arbeitsschritte sollen mit nachvollziehbaren Checkpoints fortgeführt werden können.</p></article>
+<article><h3>Freigabe &amp; Datenschutz</h3><p>Tests erfolgen nur mit freigegebenem Teilbestand, getrennt von produktiven FRS-Systemen.</p></article>
+</div></section>
+<section id="tests"><h2>Vorgeschlagene Pilot-Testfälle</h2><div class="scroller"><table><thead><tr><th>ID</th><th>Test</th><th>Angestrebtes Ergebnis</th></tr></thead><tbody>
+<tr><td>T01</td><td>Metadatenimport</td><td>Normalisierter, rückverfolgbarer Datensatz</td></tr>
+<tr><td>T02</td><td>Import wiederholen</td><td>Keine unbeabsichtigte Dublette</td></tr>
+<tr><td>T03</td><td>Fehlendes Pflichtfeld</td><td>Nachvollziehbarer Reject</td></tr>
+<tr><td>T04</td><td>Abweichender Inhalt unter derselben ID</td><td>Erkannter Konflikt, keine stille Überschreibung</td></tr>
+<tr><td>T05</td><td>Integritätskontrolle</td><td>Übereinstimmende Prüfsumme</td></tr>
+<tr><td>T06</td><td>Unterbrechung und Wiederanlauf</td><td>Nachvollziehbares Fortsetzen ohne unkontrollierte Änderungen</td></tr>
+<tr><td>T07</td><td>Offener Export</td><td>Prüfbarer Austauschdatensatz</td></tr>
+<tr><td>T08</td><td>Evidenzkette</td><td>Dokumentierte Testeingabe, Version und Ergebnis</td></tr>
+</tbody></table></div><p><strong>Status aller Testfälle:</strong> geplant, nicht durchgeführt. Prüfkriterien und Teilbestand werden mit FRS abgestimmt.</p></section>
+<section id="status"><h2>Projektstatus und Abgrenzung</h2><p>Der FRS-Projektvorschlag wurde fristgerecht eingereicht. Für das IHK-Beratungsgespräch am 10. November 2026 sind Umfang, Projektziel, Pilotdaten und Abnahmekriterien zu klären. Eine formale Projektfreigabe und Zielvereinbarung stehen noch aus.</p>
+<p>Weder das historische FRS-Archiv noch Produktivsysteme wurden durch diese Konzeptseite migriert oder verändert. Die separat durchgeführte private Wiederherstellungsübung gilt nicht als Durchführung der IHK-Projektarbeit.</p></section>
+<footer>FRS ArchivBrücke · Öffentliche Konzeptdokumentation · Stand 09.10.2026 · <a href="index.html">Zum Projektportal</a></footer>
+</main></body></html>
