@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102944">
+<meta name="description" content="Konzeptoption für lokale KI-gestützte Metadatenvorschläge im FRS-Archivprojekt. Keine reale Migration oder Freigabe.">
+<title>KI-Methodik als Option · FRS Projektportal</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+.ai-shell{max-width:1040px;margin:0 auto;padding:44px 24px 64px}
+.ai-top{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.ai-back{font-weight:700;text-decoration:none;color:#225e79}
+.ai-kicker{font-size:.78rem;letter-spacing:.11em;font-weight:800;color:#476986}
+.ai-title{font-size:clamp(2rem,5vw,3.5rem);line-height:1.13;margin:18px 0}
+.ai-lead{max-width:72ch;font-size:1.12rem;color:#35536a}
+.ai-status{border:1px solid #a6bac9;border-radius:14px;padding:16px 20px;background:#eff5f9;color:#234158}
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px;margin:26px 0}
+.ai-card{padding:22px;background:#fff;border:1px solid #dae5eb;border-radius:14px}
+.ai-card h2{font-size:1.16rem;margin:0 0 8px}
+.ai-card p{margin:0}
+.ai-section{margin:38px 0 0}
+.ai-steps{padding-left:22px;line-height:1.85}
+.ai-foot{border-top:1px solid #d6e2ea;margin-top:42px;padding-top:22px;color:#486477}
+a:focus-visible{outline:3px solid #007d83;outline-offset:3px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<main id="main" class="ai-shell">
+<div class="ai-top"><a class="ai-back" href="./index.html#recherche">← Zurück zum Projektportal</a><span class="ai-kicker">ARCHIVBRÜCKE · METHODISCHE OPTION</span></div>
+<h1 class="ai-title">KI-gestützte Metadaten: <em>prüfen, nicht voraussetzen.</em></h1>
+<p class="ai-lead">Eine mögliche Ergänzung für das geplante plattformunabhängige Sendungsarchiv: Lokale Modelle könnten Vorschläge zu Medienmetadaten erzeugen. Ob eine solche Funktion sinnvoll, rechtlich zulässig und innerhalb des Projektumfangs realisierbar ist, bleibt offen.</p>
+<div class="ai-status"><strong>Projektstatus: PRE_PROJECT.</strong> Dies ist eine Konzeptskizze, keine implementierte FRS-Funktion. Es liegen hier keine realen FRS-Archivdaten, keine automatisierte Migration und kein dokumentierter Produktiveinsatz vor. Die IHK-Projektfreigabe und die Zielvereinbarung stehen noch aus.</div>
+<div class="ai-grid" aria-label="Methodenoptionen">
+<article class="ai-card"><h2>Audiospur → Textvorschlag</h2><p>Ein Speech-to-Text-Modell könnte Sprache in einem freigegebenen Audiobeispiel erkennen. Die Zuverlässigkeit ist anhand repräsentativer Proben zu prüfen.</p></article>
+<article class="ai-card"><h2>Bilder → Beschreibungsvorschlag</h2><p>Ein Vision-Modell könnte freigegebene Sendungsbilder oder Begleitmaterial beschreiben. Unleserliche oder unklare Inhalte werden gekennzeichnet.</p></article>
+<article class="ai-card"><h2>Text → Metadatenvorschlag</h2><p>Ein Sprachmodell könnte passende Schlagwörter, Kategorien und Kurzbeschreibungen vorschlagen. Die Ergebnisse sind nicht automatisch verbindliche Archivdaten.</p></article>
+</div>
+<section class="ai-section" aria-labelledby="prozess"><h2 id="prozess">Möglicher Prüfprozess</h2>
+<ol class="ai-steps"><li>Berechtigung, Zweck und Datenminimierung vorab prüfen.</li><li>Ein kleines, erlaubtes und dokumentiertes Testsample wählen.</li><li>Lokale Modelle nur für Vorschläge einsetzen.</li><li>Vorschläge gegen Originalquelle und Metadatenregeln prüfen.</li><li>Fachliche Freigabe vor einer möglichen Übernahme verlangen.</li><li>Fehlerraten, Laufzeit, Aufwand und Entscheidung dokumentieren.</li></ol></section>
+<section class="ai-section" aria-labelledby="grenzen"><h2 id="grenzen">Grenzen und Projektentscheidung</h2>
+<p>Die technische Architektur ist nicht festgelegt. Drupal-Erweiterung, AURA-orientierte Integration und ein plattformneutraler Archivdienst bleiben zu bewertende Alternativen. Auch der Einsatz von KI ist nur eine Option; weder Kosten/Nutzen noch datenschutzrechtliche Voraussetzungen sind abschließend geklärt.</p>
+<p>Private Unterrichtsvideos, Transkripte und interne Recheninfrastruktur sind keine öffentlich zugänglichen Bestandteile dieses Portals. Die Forschungsvorbereitung ist von einer späteren betrieblichen Projektleistung zu trennen.</p></section>
+<footer class="ai-foot"><p>Konzeptstand: 13.10.2026 · Vorbereitung der FRS-IHK-Projektarbeit · Keine offizielle Website des Freien Radio Stuttgart.</p>
+<p><a href="./index.html#impressum">Impressum und Datenschutz im Projektportal</a> · <a href="./index.html#architektur">Architekturvarianten</a> · <a href="./index.html#quellen">Quellen und Projektstand</a></p></footer>
+</main></body></html>
