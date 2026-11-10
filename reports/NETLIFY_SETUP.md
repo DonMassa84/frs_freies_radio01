@@ -1,20 +1,35 @@
-# Netlify-Veröffentlichung
+# Netlify-Veröffentlichung – Archiv-Brücke FRS
 
-Status 08.10.2026: Die bestehende Website ist unter https://archiv-bruecke-frs.netlify.app/ öffentlich erreichbar. Der zunächst beobachtete HTTP-401-Zugriffsschutz war bei der erneuten Prüfung nicht mehr vorhanden. Portalinhalt, CSS und JavaScript waren abrufbar. Änderungen im GitHub-Repository müssen zusätzlich auf dieser vorhandenen Netlify-Seite veröffentlicht werden; die automatische Git-Anbindung ist noch zu verifizieren.
+**Stand: 10.11.2026.** Die öffentliche Root-Seite https://archiv-bruecke-frs.netlify.app/ ist ohne Anmeldung abrufbar. Nach dem Update des öffentlichen Quellrepositorys am 10.11.2026 wurde der **neue Textstand live** festgestellt: „Stand 10.11.2026“ sowie IHK-Empfangsbestätigung vom 23.10.2026 und fortlaufendes Prüfungsverfahren.
 
-## Ziel
+## Veröffentlichungsquelle
 
-Kostenloser Free-Tarif. Projektname: ArchivBrücke FRS. Öffentliche Adresse: https://archiv-bruecke-frs.netlify.app/. Keine neue Seite anlegen; vorhandene Seite verwenden.
+- Repository: `DonMassa84/frs_freies_radio01`
+- Branch: `main`
+- Source: `docs/projektportal/index.html` mit CSS/JS im selben Ordner
+- Publish-Ordner laut `netlify.toml`: `docs/projektportal`
+- GitHub-Workflow-Datei: `.github/workflows/deploy-netlify.yml` (Netlify-Deployment bei `main`-Änderungen im Portal vorgesehen; benötigt gültige Repository-Secrets)
+- Website-Quellcommit 10.11.: `38840e6c9c375a01fcc32d07310c4e40f9083f3d`
 
-## Git-Verbindung
+**Verifiziert:** Öffentlicher Abruf der Root-Seite mit dem aktualisierten Textstand am 10.11.2026. Damit ist die Veröffentlichung der Textänderungen bestätigt.
 
-Repository DonMassa84/frs_freies_radio01, Branch main. netlify.toml veröffentlicht ausschließlich docs/projektportal. Kein Build-Befehl erforderlich: HTML, CSS und JavaScript liegen fertig vor. Private IHK-Dateien sind nicht Teil dieses Verzeichnisses.
+**Nicht durch diesen Abruf verifiziert:** genauer Deployment-Auslöser (GitHub-Workflow oder zusätzliche Netlify-Git-Verbindung), Browserinteraktionen, externe Bilder/Streams, Barrierefreiheit, mobile Darstellung und vollständige rechtliche Konformität.
 
-## Einrichtung
+## Inhaltliche Grenzen
 
-Bei Netlify anmelden, gegebenenfalls Google-Anmeldung verwenden. Neues Projekt aus GitHub importieren und ausschließlich dieses Repository freigeben. Free-Tarif wählen, keine kostenpflichtigen Optionen oder automatische Aufladung aktivieren. Publish directory docs/projektportal; Build command leer. Die vorhandene Seite archiv-bruecke-frs weiterverwenden. Falls noch keine Git-Verbindung besteht, diese Seite mit dem Repository/Branch verbinden. Kein Pro-Abo oder kostenpflichtige Funktionen aktivieren.
+Das Portal ist ausschließlich eine **PRE_PROJECT-Vorbereitung** für das IHK-Beratungsgespräch. Die Website darf keine freigegebene Projektphase, erfolgreiche Migration, reale Datenanalyse oder beschlossene Zielarchitektur suggerieren.
 
-## Abnahme
+- Geplante 70 Stunden: 10 / 14 / 24 / 10 / 12.
+- Architekturvarianten: Drupal, AURA-orientiert, plattformneutral – Entscheidung offen.
+- Eingangsbestätigung des Projektvorschlags durch IHK am 23.10.2026, laufendes Prüfungsverfahren bestätigt am 03.11.2026.
+- Keine Zielvereinbarung oder freigegebener Datenzugang nachgewiesen.
 
-Öffentlicher Aufruf ohne Anmeldung; Projektportal direkt am URL-Einstieg; CSS/JS und FRS-Logo laden; Stream erst nach Nutzereingabe; Stand 07.10.2026, PRE_PROJECT und Beratung 10.11.2026 vorhanden. Erst danach den neuen Link weitergeben. Bestehende GitHub-Pages-Veröffentlichung bleibt erhalten.
+## Nachprüfung nach zukünftigen Änderungen
 
+1. Öffentliche Root-URL (ohne `/projektportal/`) aufrufen.
+2. Im HTML/Seiteninhalt richtigen Stand und `PRE_PROJECT` prüfen.
+3. CSS, JavaScript, Menüs und mobile Darstellung interaktiv testen.
+4. Keine privaten IHK-/FRS-Daten in öffentlicher Quelle veröffentlichen.
+5. GitHub-Deploy-Workflow und Netlify-Protokolle kontrollieren, wenn weitere Updates nicht erscheinen.
+
+Siehe auch [Portal-Synchronisation vom 10.11.2026](PORTAL_SYNC_2026-11-10.md).
